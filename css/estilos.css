@@ -48,7 +48,7 @@ li{
   margin: 10px;
   display: inline;
 }
-.resaltado{
+.actual{
   text-decoration:none;
 }
 a {
@@ -90,9 +90,11 @@ section{
     }
 #izquierda{
 text-align: center;
+
 }
 #derecha{
 text-align: center;
+
 }
 
 img{
@@ -128,14 +130,14 @@ p>img{
   width:10%;
   border: none;
 }
-img[src*="hipo"]:hover{
+#izquierda>a>figure>img[src*="hipo"]:hover{
   -moz-transform:rotate(10deg);
   -webkit-transform: rotate(10deg);
   transform: rotate(10deg);
   box-shadow: #82c3a6;
   border:solid 2px;
 }
-img[src*="samir"]:hover{
+#derecha>a>figure>img[src*="samir"]:hover{
   -moz-transform:translate(-5px,20px);
   -webkit-transform:translate(-5px,20px);
   transform:translate(20px,-5px);
@@ -160,5 +162,32 @@ img[src*="samir"]:hover{
   0%{margin-top:150%}
   60%{margin-top:-5%}
   100%{margin-top:0%}
+
+}
+#paisajesv{
+float:left;
+}
+#paisajesv>div{
+  width:33.3%;
+  float:left;
+}
+
+footer{
+  clear: both;
+}
+#paisajes1>figure>img{
+  -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+#paisajesv>div:nth-child(2n+0){
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}
+
+
+#paisajesv>div:nth-child(3){
+  -webkit-filter: sepia(90%);
+    filter: sepia(90%);
 
 }
