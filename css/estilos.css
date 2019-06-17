@@ -20,7 +20,7 @@ body {
 header  {
     width: 100%;
     background-color:#5b7989;
-    display: flex;
+
     color: white;
 
     border-top-left-radius: 10px;
@@ -59,17 +59,33 @@ section{
 
 }
 
-@media (min-width:720px)
+@media (min-width:768px)
   {
     #contenido
       {
         margin:auto;
+        text-align: center;
         width:900px;
         -webkt-animation: movisamir 2s;
         animation: movisamir 2s;
       }
+      header
+      {
+        display:flex;
+      }
+      #paisajesv>div{
+        width:33.3%;
+        float:left;
+      }
+      footer{
+          display: flex;
+      }
+      footer>div{
+        text-align:center;
+        width:25%;
+      }
   }
-  @media (max-width:720px)
+  @media (max-width:768px)
     {
       #contenido
         {
@@ -78,6 +94,30 @@ section{
           -webkt-animation: movisamir 2s;
           animation: movisamir 2s;
 
+        }
+        heeader{
+
+          display:block;
+        }
+        nav{
+
+          text-align: center;
+        }
+        h1{
+          text-align: center;
+        }
+        #paisajesv>div{
+          width:100%;
+          float:left;
+        }
+        footer{
+            margin:2px;
+            padding-left:5px;
+            display: block;
+        }
+        footer>div{
+          text-align:left;
+          width:100%;
         }
     }
     #central{
@@ -106,26 +146,11 @@ footer{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #C6d5c5;
-  display: flex;
+
 
 }
-#contacto{
-  text-align:center;
-  width:25%;
-}
 
-#terminos{
-  text-align:center;
-  width:25%;
-}
-#redes_sociales{
-  text-align:left;
-  width:25%;
-}
-#derechos{
-  text-align:center;
-  width:25%;
-}
+
 p>img{
   width:10%;
   border: none;
@@ -167,10 +192,7 @@ p>img{
 #paisajesv{
 float:left;
 }
-#paisajesv>div{
-  width:33.3%;
-  float:left;
-}
+
 
 footer{
   clear: both;
