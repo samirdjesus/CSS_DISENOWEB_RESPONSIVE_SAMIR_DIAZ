@@ -14,7 +14,7 @@
 body {
         font-family: 'Dancing Script';
         background-color: black;
-        margin:0px;
+        margin:2px;
 
       }
 header  {
@@ -84,6 +84,30 @@ section{
         text-align:center;
         width:25%;
       }
+      #secundario{
+        background-color:  #d5c75f;
+        display:flex;
+      }
+      #izquierda{
+
+      text-align: center;
+
+
+      }
+      #izquierda>a>figure>img[src*="hipo"]:hover{
+        -moz-transform:rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+        box-shadow: #82c3a6;
+        border:solid 2px;
+      }
+      #derecha>a>figure>img[src*="samir"]:hover{
+        -moz-transform:translate(-5px,20px);
+        -webkit-transform:translate(-5px,20px);
+        transform:translate(20px,-5px);
+        box-shadow: #82c3a6;
+        border:solid 2px;
+      }
   }
   @media (max-width:768px)
     {
@@ -119,26 +143,41 @@ section{
           text-align:left;
           width:100%;
         }
+        #secundario>div{
+        display:block;
+        text-align: center;
+
+        }
+
+        #izquierda>a>figure>img[src*="hipo"]:hover{
+          -moz-transform:rotate(10deg);
+          -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+          box-shadow: #82c3a6;
+          border:solid 2px;
+        }
+        #derecha>a>figure>img[src*="samir"]:hover{
+          -moz-transform:translate(-5px,20px);
+          -webkit-transform:translate(-5px,20px);
+          transform:translate(20px,-5px);
+          box-shadow: #82c3a6;
+          border:solid 2px;
+        }
     }
     #central{
       background-color:#82c3a6;
 
     }
-    #secundario{
-      background-color:  #d5c75f;
-      display:flex;
-    }
-#izquierda{
-text-align: center;
 
-}
+    }
+
 #derecha{
 text-align: center;
 
 }
 
 img{
-  width:100%;
+  width:70%;
   border-style: solid;
   border-width: 1px;
 }
@@ -155,20 +194,7 @@ p>img{
   width:10%;
   border: none;
 }
-#izquierda>a>figure>img[src*="hipo"]:hover{
-  -moz-transform:rotate(10deg);
-  -webkit-transform: rotate(10deg);
-  transform: rotate(10deg);
-  box-shadow: #82c3a6;
-  border:solid 2px;
-}
-#derecha>a>figure>img[src*="samir"]:hover{
-  -moz-transform:translate(-5px,20px);
-  -webkit-transform:translate(-5px,20px);
-  transform:translate(20px,-5px);
-  box-shadow: #82c3a6;
-  border:solid 2px;
-}
+
 
 }
 @-webkit-keyframes movisamir{
